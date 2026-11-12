@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class PenjumlahanAngka {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int angka, total = 0;
+
+        while (true) {
+            angka = input.nextInt();
+
+            if (angka < 0) {
+                break;
+            }
+
+            total += angka;
+        }
+
+        System.out.println("Total penjumlahan: " + total);
+    }
+}
